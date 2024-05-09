@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Realizar Pedido</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="caixa">
+            <h2>Realizar Pedido</h2>
+            <form>
+                <label for="tipoItem">Tipo de Item:</label>
+                <select id="tipoItem" onchange="populateOptions()">
+                    <option value="Trufa">Trufa</option>
+                    <option value="Barra Trufada">Barra Trufada</option>
+                    <option value="Coração Trufado">Coração Trufado</option>
+                    <option value="Coração com Trufas">Coração com Trufas</option>
+                </select>
+                <label for="tamanho">Tamanho:</label>
+                <select id="tamanho"></select>
+                <label for="sabor">Sabor:</label>
+                <select id="sabor"></select>
+                <label for="quantidade">Quantidade:</label>
+                <input type="number" id="quantidade" min="1" value="1">
+                <button type="button" id="adicionarAoCarrinhoBtn" onclick="adicionarAoCarrinho()">Adicionar ao Carrinho</button>
+                <a href="confirmacao.html"><button type="button">Ir para Confirmação do Pedido</button></a>
+            </form>
+            <div id="mensagem"></div> <!-- Elemento para exibir a mensagem -->
+        </div>
+    </div>
+</body>
+</html>
