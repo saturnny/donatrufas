@@ -122,3 +122,8 @@ document.addEventListener("DOMContentLoaded", function() {
     document.getElementById("tipoItem").value = "Trufa";
     populateOptions();
 });
+
+// Exportar funções para testes
+if (typeof module !== 'undefined') {
+    module.exports = { adicionarAoCarrinho };
+}
